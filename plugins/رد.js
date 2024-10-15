@@ -1,143 +1,122 @@
-let handler = m => m 
- handler.all = async function (m) { 
- let chat = global.db.data.chats[m.chat] 
-  
- if (/^احا$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat,`*احــم احــم 😳*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
-await conn.sendMessage(m.chat, { react: { text: '🐧', key: m.key } })
+let handler = m => m;
+handler.all = async function (m) {
+  let chat = global.db.data.chats[m.chat];
+
+  if (/^شعر احات $/i.test(m.text)) {
+    let vn =  'https://qu.ax/OiSk' ;
+    conn.sendPresenceUpdate( 'recording' , m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:  'audio/mpeg' , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
   }
 
-   if (/^عبيط|يا عبيط$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*تــنــمــر لــفــل ماكــس 😂*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
-   }
-   
-   if (/^منور|منوره$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*ايــه الــنــور ده كــلــه 😘*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
-await conn.sendMessage(m.chat, { react: { text: '🥺', key: m.key } })
-   }
-    if (/^😂$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*تــدوم يــاض 😂*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
-}
-    if (/^كسمك$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*عــيــب يــاض 🗿😭*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
-await conn.sendMessage(m.chat, { react: { text: '🗿', key: m.key } })
-}
+  if (/^الجن|جن$/i.test(m.text)) {
+    let vn =  'https://qu.ax/RQOw' ;
+    conn.sendPresenceUpdate( 'recording' , m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:  'audio/mpeg' , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+  }
 
- if (/^يابوت|يا بوت$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*هممممم وش في انت كمان 🗿*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
-await conn.sendMessage(m.chat, { react: { text: '🗿', key: m.key } })
- } 
+  if (/^سبحانه$/i.test(m.text)) {
+    let vn =  'https://qu.ax/nGFt.mp3' ;
+    conn.sendPresenceUpdate( 'recording' , m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:  'audio/mpeg' , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+  }
+  if (/^علاوي$/i.test(m.text)) {
+    let vn =  'https://qu.ax/vXcL.mp3' ;
+    conn.sendPresenceUpdate( 'recording' , m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:  'audio/mpeg' , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+  }
+  if (/^دانس$/i.test(m.text)) {
+    let vn =  'https://qu.ax/NDrj.m4a' ;
+    conn.sendPresenceUpdate( 'recording' , m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype: 'audio/mpeg' , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+  }
+  if (/^اضحكي$/i.test(m.text)) {
+    let vn =  'https://qu.ax/nDFB' ;
+    conn.sendPresenceUpdate( 'recording' , m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:  'audio/mpeg' , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+  }
 
-   if (/^معطوب$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat,'*تــتــكلم عــن نــفــســك صـح؟ 😂*',m) //wm, null, [['Menu', '#menu']], m) botones :v
-await conn.sendMessage(m.chat, { react: { text: '😂', key: m.key } })
-   }
+  if (/^بضاني|بيض|مبضون|بضني|ي بيض|انت بضان$/i.test(m.text)) {
+    let vn = 'https://qu.ax/oOd';
+    conn.sendPresenceUpdate('recording', m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype: 'audio/mpeg', fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+  }
+  if (/^هيجا$/i.test(m.text)) {
+    let vn = 'https://qu.ax/DCh';
+    conn.sendPresenceUpdate('recording', m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype: 'audio/mpeg', fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+  }
+  if (/^نو ريب|بلكي|امسحي الريك|تخصني|يخصني|قول تخصني$/i.test(m.text)) {
+    let vn =  'https://qu.ax/pSra' ;
+    conn.sendPresenceUpdate( 'recording' , m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:  'audio/mpeg' , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+  }
+  if (/^انا الادمن|هات رول|رول$/i.test(m.text)) {
+    let vn =   'https://qu.ax/pEbX'  ;
+    conn.sendPresenceUpdate(  'recording'  , m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:   'audio/mpeg'  , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+  }
+  if (/^راب فشيخ$/i.test(m.text)) {
+    let vn =    'https://qu.ax/MGGw'   ;
+    conn.sendPresenceUpdate(   'recording'   , m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:    'audio/mpeg'   , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+  }
+  if (/^ماندو$/i.test(m.text)) {
+    let vn =     'https://qu.ax/WOgR'    ;
+    conn.sendPresenceUpdate(    'recording'    , m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:     'audio/mpeg'    , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+  }
+  if (/^بوت مانـدو id|id$/i.test(m.text)) {
+    let vn =     'https://qu.ax/xFwY'    ;
+    conn.sendPresenceUpdate(    'recording'    , m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:     'audio/mpeg'    , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+  }
+  if (/^الغزاله$/i.test(m.text)) {
+    let vn =     'https://qu.ax/nlVt'    ;
+    conn.sendPresenceUpdate(    'recording'    , m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:     'audio/mpeg'    , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+  }
+  if (/^نا هنام|هنام|نامو|نام$/i.test(m.text)) {
+    let vn =     'https://qu.ax/OJjK'    ;
+    conn.sendPresenceUpdate(    'recording'    , m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:     'audio/mpeg'    , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+  }
+  if (/^ربنا يسمحك$/i.test(m.text)) {
+    let vn =     'https://qu.ax/cZJu'    ;
+    conn.sendPresenceUpdate(    'recording'    , m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:     'audio/mpeg'    , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+  }
+  if (/^خخ|خخخخ|خخخخخ|خخخخخخخخخخخ|خخخخخخخخ$/i.test(m.text)) {
+    let vn =     'https://qu.ax/YYHr'    ;
+    conn.sendPresenceUpdate(    'recording'    , m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:     'audio/mpeg'    , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+  }
+  if (/^متناكه|متناك|متناكين|ابن متناكه|بنت متناكه|ناس متناكه|كلو ابن متناكه|عيله متناكه$/i.test(m.text)) {
+    let vn =      'https://qu.ax/AUKY'     ;
+    conn.sendPresenceUpdate(     'recording'     , m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:      'audio/mpeg'     , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+  }
+  if (/^انا تعبان|تعبت|انتو متعبين|🗿$/i.test(m.text)) {
+    let vn =      'https://qu.ax/AJzC'     ;
+    conn.sendPresenceUpdate(     'recording'     , m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:      'audio/mpeg'     , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+  }
+  if (/^كسمك|كسمو|ي كسمك|كسمينك|كسماتك|كسم|.بوت كسمك|كسم البوت|كسمك بوت$/i.test(m.text)) {
+    let vn =       'https://qu.ax/WtJD'      ;
+    conn.sendPresenceUpdate(      'recording'      , m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:       'audio/mpeg'      , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+  }
+  if (/^كسمهم$/i.test(m.text)) {
+    let vn =       'https://qu.ax/SUrN'      ;
+    conn.sendPresenceUpdate(      'recording'      , m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:       'audio/mpeg'      , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+  }
+  if (/^مخنوق$/i.test(m.text)) {
+    let vn =        'https://file.io/JNdV5MOnBrJP'       ;
+    conn.sendPresenceUpdate(       'recording'       , m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:        'audio/mpeg'       , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+  }
 
-   if (/^بوت خرا|بوت زفت|خرا عليك$/i.test(m.text) ) { //sem prefixo
-     conn.reply(m.chat,'  *دزهــا يــاض 😂🗿*',m) //wm, null, [['Menu','#menu']], m) botones :v
 
-   }
- if (/^بحبك|احبك$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*وانـا كـمـان 😂❤️*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
-
- } 
-
-   if (/^بوت زق$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat,'*انــقــلــع بــس 😂💔*', m) //wm, null, [['Menu', '#menu']], m) botones :V
-
-   }
- if (/^همممم/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*اعــوز بـي الله مــنــك 😂💔*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
-
- } 
-  
- if (/^امزح|بهزر$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*هــزر بــراحــتــك يــابــن قــلـبـي 😂❤️*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
-   } 
-  
- if (/^في ايه$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*وربــنــا مــا اعــرف 🗿*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
- } 
-  
- if (/^تست$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*شــغــالــة يــا روحــي 🥰❤️*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
-  
- } 
-  
- if (/^صباح الخير$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*صــبــاح الــنــور  😘❤️*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
-  
- } 
-  
- if (/^انا جيت$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*مــنــور وربــنــا  😂❤️*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
-  await conn.sendMessage(m.chat, { react: { text: '😂', key: m.key } })
- } 
-  
- if (/^اخرس|اسكت$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*اخــرس انــت 🗿💔*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
-  
- } 
-  
- if (/^حرامي|سارق$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `تتهم بريء بالسرقة 
- من دون تحري او بحث 
- عن حقيقة ليست ملموسة 
- ارحنا واعمل شرطي  
- ثم افتح فمك وثرثر 
- فكلامك كـجاهل واحد  
- بل جهلاً ارحم من حديثك 
- تتصنع دور الشرطي  
- وكأنك محقق 
- بالله اصمت ولا تحرج نفسك  
- ارحنا وارح أعصابك  
- ان اكرمك الله بعقل 
- فبسكوتك اقتل جهلك`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
-  
- } 
-  
-  
- if (/^ملل|مللل|ملللل$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*مـلــلــل جــدد 😃💔*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
- 
- } 
-  
- if (/^السلام عليكم |السلام عليكم ورحمة الله|سلام عليكم|السلام عليكم ورحمة الله وبركاته $/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*وعليكم السلام ورحمة الله وبركاته ♥*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
-  
- 
- } 
-     
- if (/^🤖$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*هل انت بوت ياصحبي؟ 🗿*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
-
- } 
-     
- if (/^🐤$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `🐤🐤🐤🐤🐤`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
-  
- } 
-  
-  if (/^اه$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*الــشــارع الــي وراه 😂💔*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
-  
- } 
-     
- if (/^نعم$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*حد ناداك؟ 🐦*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
-  
- } 
-
-  
- if (/^كيفك|شخبارك|علوك|عامل ايه|اخبارك|اي الدنيا$/i.test(m.text) ) { //sem prefixo 
-    conn.reply(m.chat, `*الحمد لله و انت 🐧؟*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
-} 
-
- if (/^تتجوزيني|تتجوزيني؟$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*بــس يــعــم بــتــكــســف 😭💔*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
- 
- }
-  
- } 
- return !0 } 
- export default handler
+  return !0;
+};
+export default handler;
